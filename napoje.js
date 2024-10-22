@@ -3,7 +3,7 @@ let napoj={
     nazwa: "Napoj orzezwiajacy",
     objętość: 500,
     cena: 3.20
-};
+};g
 
 
 //task2
@@ -24,7 +24,11 @@ let napoje=[
 console.log("Dlugosc tablicy: ", napoje.length)
 
 //task3
-
+function dane(napooj)
+{
+    console.log(napooj);
+}
+dane(napoj);
 //task4
 
 napoje.push(napoj)
@@ -32,8 +36,13 @@ console.log(napoje)
 
 //task5
 console.log("___________________________")
-let kopiatablicy =  napoje
+let kopiatablicy =  [...napoje]
 console.log(kopiatablicy)
+kopiatablicy.pop()
 console.log("Dlugosc tablicy: ", kopiatablicy.length)
+console.log("Dlugosc tablicy: ", napoje.length)
+
+//task6
+
 
 
