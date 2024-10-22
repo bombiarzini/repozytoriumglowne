@@ -3,9 +3,7 @@ let napoj={
     nazwa: "Napoj orzezwiajacy",
     objętość: 500,
     cena: 3.20
-};g
-
-
+};
 //task2
 let napoje=[
     {  nazwa: "Cisowianka",
