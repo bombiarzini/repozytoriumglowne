@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let liczba1 = prompt("Podaj pierwsza liczbe: ");
+      Number.isNaN(liczba1);
+      let liczba2 = prompt("Podaj druga liczbe: ");
+      Number.isNaN(liczba2);
+      let operacje = prompt("Podaj jaka chcesz zrobic operacje: “+”, “-”, “*”, “/”");
+      let wynik;
+
+      if(Number.isNaN(liczba1)==false && Number.isNaN(liczba1)==false){
+        switch (operacje) {
+          case "+":
+            wynik = liczba1 + liczba2;
+            alert(wynik);
+            break;
+          case "-":
+            wynik = liczba1 - liczba2;
+            alert(wynik);
+            break;
+          case "*":
+            wynik = liczba1 * liczba2;
+            alert(wynik);
+            break;
+          case "/":
+            wynik = liczba1 / liczba2;
+            alert(wynik);
+            break;
+          default:
+            alert("Podales bledna operacje");
+        }
+      }else{
+        alert("Liczba1 lub Liczba2 jest bledna");
+      }
+
+
+  </script>
+</body>
+</html>
